@@ -40,6 +40,8 @@ public class AstPrinter implements Expr.Visitor<String> {
         return builder.toString();
     }
 
+    // Run this with something like:
+    // C:\Users\ewbank\IdeaProjects\lox>java -cp .\out\production\lox\ com.craftinginterpreters.lox.AstPrinter
     public static void main(String[] args) {
         Expr expression = new Expr.Binary(
                 new Expr.Unary(
